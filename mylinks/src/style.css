@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1688759973983-fa77fec09bf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTA5MTA1MDh8&ixlib=rb-4.0.3&q=80&w=400)
+    no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  width: 360px;
+  margin: auto;
+ margin: 62px auto 0px;
+}
+
+#profile {
+  text-align: center;
+  /*serve para deixar a foto no centro ou nas larerais, existe o display: block; */
+
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  margin: auto;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  -webkit-backdrop-filter: 4px;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/*pseudo selector*/
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  background: 1.5px rgba(255, 255, 255, 0.5);
+  border: 1.5px solid white;
+}
+
+#social_links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50px;
+}
+
+#social-links a:hover /*a:hover significa q vc vai definir oq vai acontecer quando passar o mouse ou o dedo em cima do objeto*/ {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
